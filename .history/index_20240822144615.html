@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraph Management</title>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>INPUT YOUR MESSAGE</h1>
+      <form id="paragraphForm">
+        <textarea
+          id="paragraphInput"
+          placeholder="Paste Your Paragraph here (60-240 words)"
+          rows="10"
+          cols="50"
+        ></textarea>
+        <p id="wordCount">Word count: 0</p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <h1>Paragraph Details</h1>
+      <table>
+        <tr>
+          <th>No. of Upper Case Letters</th>
+          <th>No. of Lower Case Letters</th>
+          <th>No. of Words</th>
+          <th>Special Characters</th>
+        </tr>
+        <tr>
+          <td id="upperCaseCount">0</td>
+          <td id="lowerCaseCount">0</td>
+          <td id="wordCountResult">0</td>
+          <td id="specialCharCount">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <button id="upperToLowerBtn">Upper to Lower</button>
+      <button id="lowerToUpperBtn">Lower to Upper</button>
+      <button id="boldBtn">BOLD</button>
+      <button id="underlineBtn">UNDERLINE</button>
+    </div>
+
+    <p id="uppertoLower">Upper to lower result</p>
+    <p id="lowertoUpper">Lower to upper result</p>
+    <p id="boldPara">Make bold result</p>
+    <p id="underlinePara">Underlined paragraph input</p>
+
+    <div>
+      <h1>Search By Word</h1>
+      <input type="text" id="searchInput" />
+      <button id="searchBtn">Search</button>
+      <textarea id="searchResult" rows="3" cols="50" readonly></textarea>
+    </div>
+  </body>
+</html>

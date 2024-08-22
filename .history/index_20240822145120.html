@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraph Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Paragraph Management</h1>
+      
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <h2>Input Your Message</h2>
+            </div>
+            <div class="card-body">
+              <form id="paragraphForm">
+                <div class="mb-3">
+                  <textarea
+                    id="paragraphInput"
+                    class="form-control"
+                    placeholder="Paste Your Paragraph here (60-240 words)"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <p id="wordCount" class="text-muted">Word count: 0</p>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <h2>Paragraph Details</h2>
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Upper Case</th>
+                    <th>Lower Case</th>
+                    <th>Words</th>
+                    <th>Special Chars</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="upperCaseCount">0</td>
+                    <td id="lowerCaseCount">0</td>
+                    <td id="wordCountResult">0</td>
+                    <td id="specialCharCount">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col">
+          <button id="upperToLowerBtn" class="btn btn-secondary">Upper to Lower</button>
+          <button id="lowerToUpperBtn" class="btn btn-secondary">Lower to Upper</button>
+          <button id="boldBtn" class="btn btn-secondary">BOLD</button>
+          <button id="underlineBtn" class="btn btn-secondary">UNDERLINE</button>
+        </div>
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3>Results</h3>
+              <p id="uppertoLower" class="result-text">Upper to lower result</p>
+              <p id="lowertoUpper" class="result-text">Lower to upper result</p>
+              <p id="boldPara" class="result-text">Make bold result</p>
+              <p id="underlinePara" class="result-text">Underlined paragraph input</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Search By Word</h3>
+            </div>
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Enter word to search">
+                <button id="searchBtn" class="btn btn-primary">Search</button>
+              </div>
+              <textarea id="searchResult" class="form-control" rows="3" readonly></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

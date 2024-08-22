@@ -1,0 +1,39 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-text {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#searchResult {
+    resize: none;
+}
+
+.btn-secondary {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
